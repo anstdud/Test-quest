@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка кредитов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss-main/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-dropdown__menu">
+                <button class="nav-dropdown__button" id="burger">&#9776;</button>
+                <div class="overlay" id="overlay"></div>
+                <nav class="nav-dropdown__sidebar" id="sidebar">
+                    <button class="close-btn" id="close-btn">&times;</button>
+                    <ul class="nav-dropdown__list">
+                        <div class="nav-dropdown__logo">
+                            <h1 class="nav-dropdown__text">Logo</h1>
+                        </div>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">People nearby</a></li>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Search</a></li>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Profile</a></li>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">My photos</a></li>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Messages</a></li>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Favorites</a></li>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Guests</a></li>
+                        <li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Settings</a></li>
+                        <li class="nav-dropdown__item"></li><a href="#" class="nav-dropdown__link" style="text-decoration: none; color: #FFCF2D;">Log out</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-dropdown__premium">
+                    <button class="nav-menu__button-premium"><img class="diamond-button" src="img/diamond.svg" alt="diamond"></button>
+                </div>
+            </div>
+            <div class="nav-default__menu">
+                <nav class="nav-default__sidebar">
+                    <div class="nav-menu__logo">
+                        <h1>Logo</h1>
+                    </div>
+                    <ul class="main-nav__list">
+                      <li class="main-nav__item">
+                        <a href="#about-the-product__section" class="main-nav__link">People nearby</a>
+                      </li>
+                      <li class="main-nav__item">
+                        <a href="#scooter-design__section" class="main-nav__link">Search</a>
+                      </li>
+                    </ul>
+                    <div class="nav-menu__button">
+                        <button class="nav-menu__button-premium">Premium<img class="diamond-button" src="img/diamond.svg" alt="diamond"></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">  
+            <aside class="side-menu">
+                <div class="side-menu__user-info">
+                    <img class="side-menu__profile-picture" src="img/user-avatar.svg" alt="user-avatar">
+                    <h3 class="side-menu__nickname">Test2412</h3>
+                    <button class="side-menu__get-premium">GET PREMIUM</button>
+                </div>
+                <ul class="side-menu__list">
+                    <li><a href="#"><img src="img/profile-icon.svg" alt="profile">Profile</a></li>
+                    <li><a href="#"><img src="img/photos-icon.svg" alt="my-photos">My photos</a></li>
+                    <li><a href="#"><img src="img/messages-icon.svg" alt="messages">Messages</a></li>
+                    <li><a href="#"><img src="img/favorites-icon.svg" alt="favorites">Favorites</a></li>
+                    <li><a href="#"><img src="img/guests-icon.svg" alt="guests">Guests</a></li>
+                    <li><a href="#"><img src="img/settings-icon.svg" alt="settings">Settings</a></li>
+                    <li><a href="#"><img src="img/logout-icon.svg" alt="log-out">Log out</a></li>
+                </ul>
+            </aside>          
+            <section class="main__section">
+                <div class="main__title">
+                    <h2 class="main__text">Закончились кредиты?</h2>
+                </div>
+                <div class="main__discount-banner">
+                    <span class="main__discount-text">Скидка 40%</span>
+                    <span class="main__discount-timer-text">Предложение действует в течение:</span>
+                    <div class="main__timer" id="timer">
+                        00:30:00
+                    </div>
+                </div>     
+                <div class="main-slider">
+                    <div class="main-slider__offer-box-container" id="main-slider__offer-box-container">
+                        <div class="main-slider__offer-box">
+                            <span class="main-slider__offer-label">One time offer!</span>
+                            <div class="main-slider__offer-price">
+                                <span class="credits">50 <img src="img/cr.svg" class="credit__cr" alt="cr__svg"></span>
+                                <span class="price">/ $5</span>
+                            </div>
+                            <button class="main-slider__offer-button">Buy now</button>
+                        </div>
+                        <div class="main-slider__offer-box">
+                            <span class="main-slider__offer-label">One time offer!</span>
+                            <div class="main-slider__offer-price">
+                                <span class="credits">150 <img src="img/cr.svg" class="credit__cr" alt="cr__svg"></span>
+                                <span class="price">/ $15</span>
+                            </div>
+                            <button class="main-slider__offer-button">Buy now</button>
+                        </div>
+                        <div class="main-slider__offer-box">
+                            <span class="main-slider__offer-label">One time offer!</span>
+                            <div class="main-slider__offer-price">
+                                <span class="credits">300 <img src="img/cr.svg" class="credit__cr" alt="cr__svg"></span>
+                                <span class="price">/ $30</span>
+                            </div>
+                            <button class="main-slider__offer-button">Buy now</button>
+                        </div>
+                        <div class="main-slider__offer-box">
+                            <span class="main-slider__offer-label">One time offer!</span>
+                            <div class="main-slider__offer-price">
+                                <span class="credits">500 <img src="img/cr.svg" class="credit__cr" alt="cr__svg"></span>
+                                <span class="price">/ $50</span>
+                            </div>
+                            <button class="main-slider__offer-button">Buy now</button>
+                        </div>
+                        <div class="main-slider__offer-box">
+                            <span class="main-slider__offer-label">One time offer!</span>
+                            <div class="main-slider__offer-price">
+                                <span class="credits">1000 <img src="img/cr.svg" class="credit__cr" alt="cr__svg"></span>
+                                <span class="price">/ $100</span>
+                            </div>
+                            <button class="main-slider__offer-button">Buy now</button>
+                        </div>
+                        <div class="main-slider__offer-box main-slider__offer-box__special" style="background-color: rgba(170, 100, 100, 0.2);">
+                            <span class="main-slider__offer-label">One time offer!</span>
+                            <div class="main-slider__offer-price">
+                                <span class="credits">1000 <img src="img/cr.svg" class="credit__cr" alt="cr__svg"></span>
+                                <span class="price">/ $100</span>
+                            </div>
+                            <button class="main-slider__offer-button">Buy now</button>
+
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                        <span class="dot" data-index="5"></span>
+                    </div>
+                    <div class="main-slide__button-buy">
+                        <button class="main-slide__button">Buy now</button>
+                    </div>
+                </div>
+                <div class="main-slider__checkbox">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text">
+                            By clicking Checkbox you agree and accept our 
+                            <a href="#">Privacy Policy</a>, and 
+                            <a href="#">Terms of use</a>
+                        </span>
+                    </label>
+                </div>
+            </section>
+            <section class="premium-section">
+                <div class="premium-section__icon">
+                    <img src="img/big-diamond.svg" alt="diamond-icon" class="premium-icon">
+                </div>
+                <div class="premium-section__information">
+                    <div class="premium-item">
+                        <img src="img/chat-icon.svg" alt="chat-icon">
+                        <span>Отправлять сообщения</span>
+                    </div>
+                    <div class="premium-item">
+                        <img src="img/view-photo-icon.svg" alt="view-photo-icon">
+                        <span>Просматривать скрытые фото</span>
+                    </div>
+                    <div class="premium-item">
+                        <img src="img/gift-icon.svg" alt="gift-icon">
+                        <span>Оплачивать подарки</span>
+                    </div>
+                    <div class="premium-item">
+                        <img src="img/heart-icon.svg" alt="heart-icon">
+                        <span>Пользоваться другими премиум функциями</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
